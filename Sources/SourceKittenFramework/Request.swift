@@ -240,6 +240,7 @@ public enum Request {
                 "key.editor.format.options": [
                     "key.editor.format.indentwidth": indentWidth,
                     "key.editor.format.tabwidth": indentWidth,
+                    // Had to add the cast to Int64 because Swift v5.5 on ARM was not compiling without it.
                     "key.editor.format.usetabs": Int64(useTabs ? 1 : 0)
                 ]
             ]
